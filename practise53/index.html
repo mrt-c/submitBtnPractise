@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form id="my-form">
+      <label for="text-input">Введите текст:</label>
+      <input type="text" id="text-input" name="text-input" />
+      <button type="submit">Отправить</button>
+    </form> -->
+
+    <!-- <input type="text" id="colorInput" />
+    <button onclick="changeBackgroundColor()">Change background color</button> -->
+
+        <h1>Анкета Хогвартса</h1>
+    <form id="hogwarts-form">
+      <label for="name">Введите имя:</label>
+      <input type="text" id="name" name="name" required /><br />
+      <label for="surname">Введите фамилию:</label>
+      <input type="text" id="surname" name="surname" required /><br />
+      <label for="age">Введите ваш возраст:</label>
+      <input type="number" id="age" name="age" required /><br />
+      <label for="email">Введите адрес для электронной "совы":</label>
+      <input type="email" id="email" name="email" required /><br />
+      <label for="color">Выберите ваш любимый цвет:</label>
+      <select id="color" name="color" required>
+        <option value="">Выберите цвет</option>
+        <option value="Красный">Красный</option>
+        <option value="Жёлтый">Жёлтый</option>
+        <option value="Синий">Синий</option>
+        <option value="Зеленый">Зеленый</option></select
+      ><br />
+      <label>Выберите ваше любимое животное:</label>
+      <div class="content_radio">
+        <div class="wrapper_radio">
+          <input type="radio" id="lion" name="animal" value="Лев" required />
+          <label for="lion">Лев</label>
+        </div>
+        <div class="wrapper_radio">
+          <input type="radio" id="badger" name="animal" value="Барсук" />
+          <label for="badger">Барсук</label>
+        </div>
+        <div class="wrapper_radio">
+          <input type="radio" id="eagle" name="animal" value="Орёл" />
+          <label for="eagle">Орёл</label>
+        </div>
+        <div class="wrapper_radio">
+          <input type="radio" id="snake" name="animal" value="Змея" />
+          <label for="snake">Змея</label>
+        </div>
+      </div>
+      <div class="wrapper_btn">
+        <button type="submit">Зачислить!</button>
+        <button type="button" onclick="clearForm()">Я магл</button>
+      </div>
+    </form>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div id="modal-text">
+          <span class="close">&times;</span>
+          <p>Вы ввели данные:</p>
+          <ul>
+            <li><strong>Имя:</strong> <span id="modal-name"></span></li>
+            <li><strong>Фамилия:</strong> <span id="modal-surname"></span></li>
+            <li><strong>Возраст:</strong> <span id="modal-age"></span></li>
+            <li>
+              <strong>Адрес электронной почты:</strong>
+              <span id="modal-email"></span>
+            </li>
+            <li>
+              <strong>Любимый цвет:</strong> <span id="modal-color"></span>
+            </li>
+            <li>
+              <strong>Любимое животное:</strong> <span id="modal-animal"></span>
+            </li>
+          </ul>
+          <button id="correct-btn">Все верно</button>
+          <button id="cancel-btn">Галя, отмена!</button>
+        </div>
+        <button id="modal-correct">Алохомора</button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
